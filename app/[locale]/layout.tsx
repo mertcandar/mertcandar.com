@@ -35,7 +35,7 @@ const fira = Fira_Code({
 });
 
 export const metadata = {
-  title: 'Portfolio | Electrical & Electronics Engineer',
+  title: 'Mertcan DAR',
   description: 'Personal portfolio web application',
 };
 
