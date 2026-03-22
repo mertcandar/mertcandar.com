@@ -50,8 +50,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
             </div>
           </div>
 
-          <div className="prose prose-invert prose-p:text-text-muted prose-p:leading-relaxed max-w-none mb-12">
-            <p className="text-lg">{project.description}</p>
+          <div className="prose prose-invert max-w-none mb-12">
+            <p className="text-lg text-text-muted leading-relaxed whitespace-pre-wrap">{project.description}</p>
 
             {project.resourceLinks && project.resourceLinks.length > 0 && (
               <div className="mt-12 flex flex-wrap gap-4">

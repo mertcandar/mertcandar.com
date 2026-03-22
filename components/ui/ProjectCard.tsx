@@ -33,7 +33,9 @@ export default function ProjectCard({ project, locale }: ProjectCardProps) {
       </h3>
       
       <p className="font-fira text-text-muted text-sm mb-6 flex-grow">
-        {project.description}
+        {project.description.length > 300 
+          ? `${project.description.substring(0, 300)}...` 
+          : project.description}
       </p>
       
       <div className="flex flex-wrap gap-2 mb-6">
