@@ -1,0 +1,55 @@
+{
+  "nav": { "home": "Home", "about": "About", "projects": "Projects", "contact": "Contact" },
+  "hero": {
+    "init": "> initializing portfolio...",
+    "role": "/* Electrical & Electronics Engineer */",
+    "cta": "[ ./explore.sh ]"
+  },
+  "about": {
+    "sectionLabel": "// section_02: about.c",
+    "title": "System Info",
+    "skills": "Skills",
+    "structName": "Profile",
+    "instanceName": "profile",
+    "fields": {
+      "name": "name",
+      "surname": "surname",
+      "role": "role",
+      "location": "location",
+      "email": "email",
+      "experience": "experience_years"
+    },
+    "values": {
+      "name": "Mertcan",
+      "surname": "DAR",
+      "role": "Electrical & Electronics Engineer",
+      "location": "Istanbul, Turkey",
+      "email": "contact@mertcandar.com",
+      "experience": "1"
+    },
+    "downloadCV": "[ DOWNLOAD_CV ]"
+  },
+  "projects": {
+    "sectionLabel": "// section_03: projects.c",
+    "title": "Modules",
+    "viewCode": "[ VIEW_CODE ]",
+    "viewLive": "[ INSPECT ]",
+    "viewMore": "[ VIEW_MORE ]"
+  },
+  "contact": {
+    "sectionLabel": "// section_04: contact.c",
+    "title": "Transmit Signal",
+    "nameLabel": "> name:",
+    "emailLabel": "> email:",
+    "messageLabel": "> message:",
+    "namePlaceholder": "your name",
+    "emailPlaceholder": "email",
+    "messagePlaceholder": "your message...",
+    "validationError": "// ERROR: field_required",
+    "submit": "[ SEND_SIGNAL() ]",
+    "success": "// message transmitted. awaiting...",
+    "error": "// error_occurred. retry...",
+    "socials": "Links"
+  },
+  "status": "SIGNAL OK"
+}

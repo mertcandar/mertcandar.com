@@ -1,0 +1,5 @@
+{
+  "name": "portfolio",
+  "description": "Personal portfolio website for Mertcan DAR — Electrical & Electronics Engineer. Built with Next.js, Tailwind CSS, Contentful CMS, and Framer Motion.",
+  "requestFramePermissions": []
+}

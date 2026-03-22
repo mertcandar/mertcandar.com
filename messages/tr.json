@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "init": "> portfolyo_baslatiliyor...",
+    "role": "/* Elektrik & Elektronik Mühendisi */",
+    "cta": "[ ./kesfet.sh ]"
+  },
+  "about": {
+    "sectionLabel": "// bölüm_02: hakkımda.c",
+    "title": "Sistem Bilgisi",
+    "skills": "Beceriler",
+    "structName": "Profil",
+    "instanceName": "profil",
+    "fields": {
+      "name": "isim",
+      "surname": "soyisim",
+      "role": "unvan",
+      "location": "konum",
+      "email": "eposta",
+      "experience": "deneyim_yili"
+    },
+    "values": {
+      "name": "Mertcan",
+      "surname": "DAR",
+      "role": "Elektrik & Elektronik Mühendisi",
+      "location": "İstanbul, Türkiye",
+      "email": "iletisim@mertcandar.com",
+      "experience": "1"
+    },
+    "downloadCV": "[ CV_INDIR ]"
+  },
+  "projects": {
+    "sectionLabel": "// bölüm_03: projeler.c",
+    "title": "Modüller",
+    "viewCode": "[ KODU_GOR ]",
+    "viewLive": "[ INCELE ]",
+    "viewMore": "[ DAHA_FAZLA ]"
+  },
+  "contact": {
+    "sectionLabel": "// bölüm_04: iletişim.c",
+    "title": "Sinyal Gönder",
+    "nameLabel": "> isim:",
+    "emailLabel": "> e-posta:",
+    "messageLabel": "> mesaj:",
+    "namePlaceholder": "isminiz",
+    "emailPlaceholder": "e-posta",
+    "messagePlaceholder": "mesajınız...",
+    "validationError": "// HATA: bu_alan_zorunludur",
+    "submit": "[ SINYAL_GONDER() ]",
+    "success": "// mesaj_iletildi. bekliyorum...",
+    "error": "// hata_oluştu. tekrar_dene...",
+    "socials": "Bağlantılar"
+  },
+  "status": "SINYAL_TAMAM"
+}
