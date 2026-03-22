@@ -1,3 +1,4 @@
+import { data } from 'framer-motion/client';
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
@@ -20,13 +21,21 @@ export async function POST(request: Request) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    const data = await resend.emails.send({
-      from: 'Contact Form <iletisim@mertcandar.com>',
-      to: ['mertcan.dar@outlook.com'],
-      subject: `New Contact Form Submission from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-      replyTo: email,
-    });
+    try {
+      const data = await resend.emails.send({
+        from: 'Contact Form <onboarding@resend.dev>', // Sorunun domainden olup olmadığını anlamak için geçici olarak tekrar bunu yapalım
+        to: ['mertcan.dar@outlook.com'],
+        subject: `New Contact Form Submission from ${name}`,
+        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+        replyTo: email, // replyTo yerine alt tire ile yazıyoruz
+      });
+
+      console.log("Resend Başarılı:", data);
+      // return NextResponse.json(data); // Next.js response kodun burada olmalı
+    } catch (error) {
+      console.error("Resend Hatası Yakalandı:", error);
+      // return NextResponse.json({ error }, { status: 500 });
+    }
 
     return NextResponse.json({ success: true, data });
   } catch (error) {
