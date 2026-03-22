@@ -20,16 +20,16 @@ export async function POST(request: Request) {
 
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    // Resend'den dönen data ve error objelerini ayrı ayrı alıyoruz
+    // Resend'den dönen data ve error objelerini alıyoruz
     const { data, error } = await resend.emails.send({
       from: 'Contact Form <iletisim@mertcandar.com>',
       to: ['mertcan.dar@outlook.com'],
       subject: `New Contact Form Submission from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-      reply_to: email, // replyTo yerine alt tire ile yazıldı
+      replyTo: email, // TypeScript hatasını çözmek için tekrar replyTo yaptık
     });
 
-    // Eğer Resend bir hata döndürdüyse bunu yakalayıp logluyoruz
+    // Resend API'den dönen gerçek bir hata varsa yakalıyoruz
     if (error) {
       console.error("RESEND GERÇEK HATA:", error);
       return NextResponse.json({ success: false, error }, { status: 400 });
