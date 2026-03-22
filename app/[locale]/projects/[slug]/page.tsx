@@ -37,8 +37,8 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
 
         <div className="bg-bg-surface border border-border-dim p-8 md:p-12">
-          <div className="mb-8 border-b border-border-dim pb-8">
-            <h1 className="text-accent-amber font-ibm uppercase text-3xl md:text-4xl mb-4">
+          <div className="mb-8 border-b border-border-dim pb-8 overflow-hidden">
+            <h1 className="text-accent-amber font-ibm uppercase text-xl sm:text-2xl md:text-4xl mb-4 truncate" title={`[${project.title}]`}>
               [{project.title}]
             </h1>
             <div className="flex flex-wrap gap-3">
