@@ -72,6 +72,39 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 
 > **Note:** Without Contentful credentials, the app falls back to mock data automatically.
 
+### Contentful Data Models
+
+To connect your own Contentful space, create the following two **Content Types**:
+
+#### 1. Project (ID: `project`)
+| Field ID | Type | Description |
+|----------|------|-------------|
+| `title` | Short text | Project name |
+| `slug` | Short text | URL slug (e.g., `my-project`) |
+| `description` | Text | Project description |
+| `techTags` | List (Short text) | Array of technologies (e.g., `["React", "Node"]`) |
+| `githubUrl` | Short text | Link to source code |
+| `liveUrl` | Short text | Link to live demo |
+| `featured` | Boolean | Show on homepage (Yes/No) |
+| `resourceLinks` | Array of References | Links to files/assets (e.g., PDF schematics) |
+
+#### 2. Profile (ID: `profile`)
+| Field ID | Type | Description |
+|----------|------|-------------|
+| `heroTitle` | Short text | Main title in Hero (e.g., `MERTCAN_D`) |
+| `heroRole` | Short text | Subtitle in Hero |
+| `firstName` | Short text | First Name |
+| `lastName` | Short text | Last Name |
+| `role` | Short text | Professional Title |
+| `location` | Short text | Location (e.g., `İstanbul, Türkiye`) |
+| `email` | Short text | Contact Email |
+| `experienceYears` | Integer | Years of experience |
+| `bio` | Text | Long biography text |
+| `skills` | JSON Object | Array of skills: `[{"name": "C++", "level": 90}]` |
+| `cvFile` | Reference (Asset) | Upload your PDF CV |
+| `githubUrl` | Short text | GitHub Profile URL |
+| `linkedinUrl` | Short text | LinkedIn Profile URL |
+
 ## 🌐 Internationalization
 
 - Default locale: **Türkçe (tr)**
