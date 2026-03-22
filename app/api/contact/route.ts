@@ -5,7 +5,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json();
     console.log("Contact form submission:", body);
-    
+
     const { name, email, message } = body;
 
     if (!name || !email || !message) {
@@ -21,8 +21,8 @@ export async function POST(request: Request) {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
     const data = await resend.emails.send({
-      from: 'Contact Form <onboarding@resend.dev>',
-      to: ['iletisim@mertcandar.com'],
+      from: 'Contact Form <iletisim@mertcandar.com>',
+      to: ['mertcan.dar@outlook.com'],
       subject: `New Contact Form Submission from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
       replyTo: email,
